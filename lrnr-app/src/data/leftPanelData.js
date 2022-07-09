@@ -1,5 +1,5 @@
 const tree = {
-  name: "",
+  name: "collection.1",
   isFolder: true,
   items: [
     {
@@ -11,7 +11,7 @@ const tree = {
           isFolder: true,
           items: [
             {
-              name: "Content Page 1.1.1.1",
+              name: "Content_Page.1.1.1.1",
               isFolder: true,
               items: [
                 {
