@@ -15,6 +15,8 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import MailIcon from "@mui/icons-material/Mail";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
+import ToggleOffTwoToneIcon from "@mui/icons-material/ToggleOffTwoTone";
+import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -97,8 +99,18 @@ export default function PrimarySearchAppBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
+      <MenuItem onClick={handleMenuClose}>
+        Dark Mode
+        <ToggleOffTwoToneIcon />
+      </MenuItem>
       <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+      <MenuItem onClick={handleMenuClose}>
+        What's New <FiberManualRecordIcon />
+      </MenuItem>
+      <MenuItem onClick={handleMenuClose}>Help</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Send Feedback</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Hints and Shortcuts</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Logout</MenuItem>
     </Menu>
   );
 
@@ -167,20 +179,20 @@ export default function PrimarySearchAppBar() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
+          {/* <Typography
             variant="h6"
             noWrap
             component="div"
             sx={{ display: { xs: "none", sm: "block" } }}
           >
             MUI
-          </Typography>
+          </Typography> */}
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase
-              placeholder="Search…"
+              placeholder="dfin"
               inputProps={{ "aria-label": "search" }}
             />
           </Search>

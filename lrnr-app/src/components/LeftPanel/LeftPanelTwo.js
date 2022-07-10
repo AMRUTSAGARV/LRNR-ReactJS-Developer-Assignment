@@ -5,10 +5,10 @@ function LeftPanelTwo({ tree2 }) {
   if (tree2.isFolder) {
     return (
       <div>
-        <span onClick={() => setExpand(!expand)}>
+        <button onClick={() => setExpand(!expand)}>
           {tree2.name}
           <br />
-        </span>
+        </button>
         <div style={{ display: expand ? "block" : "none", paddingLeft: 20 }}>
           {tree2.items.map((exp) => {
             return <LeftPanelTwo key={exp.key} tree2={exp} />;

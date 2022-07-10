@@ -10,21 +10,14 @@ import tree4 from "./data/leftPanelFour";
 import tree5 from "./data/leftPanelFive";
 import LeftPanelFour from "./components/LeftPanel/LeftPanelFour";
 import LeftPanelFive from "./components/LeftPanel/LeftPanelFive";
+import Wysiwyg from "./components/Wysiwyg.js/Wysiwyg";
+import BasicTabs from "./components/SwitchTabs/SwitchTabs";
 
 function App() {
   return (
     <div>
       <PrimarySearchAppBar />
-      <div className="flex h-screen m-1">
-        <div className="border-4 p-10 w-1/3.5">
-          <LeftPanel tree={tree} />
-          <LeftPanelTwo tree2={tree2} />
-          <LeftPanelThree tree3={tree3} />
-          <LeftPanelFour tree4={tree4} />
-          <LeftPanelFive tree5={tree5} />
-        </div>
-        <div className="border-4 p-10 w-full"></div>
-      </div>
+      <BasicTabs />
     </div>
   );
 }
