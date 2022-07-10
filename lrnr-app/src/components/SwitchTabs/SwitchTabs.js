@@ -72,14 +72,14 @@ export default function BasicTabs() {
       </Box>
       <TabPanel value={value} index={0}>
         <div className="flex h-screen">
-          <div className="border-2 p-10 w-1/3.5">
+          <div className="border-1 p-10 w-1/3.5">
             <LeftPanel tree={tree} />
             <LeftPanelTwo tree2={tree2} />
             <LeftPanelThree tree3={tree3} />
             <LeftPanelFour tree4={tree4} />
             <LeftPanelFive tree5={tree5} />
           </div>
-          <div className="border-2 p-10 w-full">
+          <div className="border-2 ml-10 p-10 w-full">
             <Wysiwyg />
           </div>
         </div>

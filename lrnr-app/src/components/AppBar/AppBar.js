@@ -4,7 +4,6 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
 import Badge from "@mui/material/Badge";
 import MenuItem from "@mui/material/MenuItem";
@@ -96,6 +95,7 @@ export default function PrimarySearchAppBar() {
         vertical: "top",
         horizontal: "right",
       }}
+      //make this false to show the drop down permamnently
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
@@ -137,7 +137,7 @@ export default function PrimarySearchAppBar() {
             <MailIcon />
           </Badge>
         </IconButton>
-        <p>Messages</p>
+        <p>Invite Team Member</p>
       </MenuItem>
       <MenuItem>
         <IconButton
@@ -179,14 +179,7 @@ export default function PrimarySearchAppBar() {
           >
             <MenuIcon />
           </IconButton>
-          {/* <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ display: { xs: "none", sm: "block" } }}
-          >
-            MUI
-          </Typography> */}
+
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
