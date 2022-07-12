@@ -71,7 +71,7 @@ export default function BasicTabs() {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <div className="flex h-screen">
+        <div className="flex">
           <div className="border-1 p-10 w-1/3.5">
             <LeftPanel tree={tree} />
             <LeftPanelTwo tree2={tree2} />

@@ -12,7 +12,7 @@ const Wysiwyg = () => {
         collection.1/collection.1.1/collection.1.1.1
         <span className="ml-20">Add item member</span>
       </div>
-      <div className="header">WYSIWYG Editor</div>
+      <div className="header font-thin">WYSIWYG Editor</div>
       <EditingOption />
       {/* <h1 className="tname1 py-3 text-xl">Topic Name</h1> */}
       <p className="py-3 para1 text-base">
@@ -37,7 +37,7 @@ const Wysiwyg = () => {
         statistics emphasizes quantitative data and description. In contrast,
         data science deals with quantitative and qualitative data.
       </p>
-      <AddCircleOutlineOutlinedIcon />
+      <AddCircleOutlineOutlinedIcon style={{ color: "magenta" }} />
     </div>
   );
 };

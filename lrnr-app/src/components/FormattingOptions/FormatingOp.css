@@ -1,22 +1,31 @@
 
-.icon1{
-	color: rgb(202, 0, 0);
+.icon4{
+	color: snow;
+	position: absolute;
+}
+.icon5{
+	color:  snow;
+	position: absolute;
+
+}
+.icon6{
+	color:  snow;
 }
 
-.speech-bubble {
+.speech-bubble2 {
 	position: relative;
 	background: #1b1e1f;
 	border-radius: .3em;
     border: 2px solid transparent;
-	height: 50px;
-	width: 200px;
+	height: 40px;
+	width: 255px;
 }
 
-.speech-bubble:after {
+.speech-bubble2:after {
 	content: '';
 	position: absolute;
 	bottom: 0;
-	left: 50%;
+	left: 24%;
 	width: 20px;
 	height: 25px;
 	border: 18px solid transparent;

@@ -9,11 +9,6 @@ function LeftPanelThree({ tree3 }) {
           {tree3.name}
           <br />
         </span>
-        {/* <div style={{ display: expand ? "block" : "none", paddingLeft: 20 }}> */}
-        {/* {tree3.items.map((exp) => {
-            return <LeftPanelThree key={exp.key} tree3={exp} />;
-          })} */}
-        {/* </div> */}
       </div>
     );
   } else {

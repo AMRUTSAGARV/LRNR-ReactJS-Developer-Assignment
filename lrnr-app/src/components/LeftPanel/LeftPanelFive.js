@@ -9,11 +9,6 @@ function LeftPanelFive({ tree5 }) {
           {tree5.name}
           <br />
         </span>
-        {/* <div style={{ display: expand ? "block" : "none", paddingLeft: 20 }}> */}
-        {/* {tree5.items.map((exp) => {
-            return <LeftPanelFive key={exp.key} tree5={exp} />;
-          })} */}
-        {/* </div> */}
       </div>
     );
   } else {

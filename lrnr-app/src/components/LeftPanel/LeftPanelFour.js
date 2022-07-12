@@ -9,11 +9,6 @@ function LeftPanelFour({ tree4 }) {
           {tree4.name}
           <br />
         </span>
-        {/* <div style={{ display: expand ? "block" : "none", paddingLeft: 20 }}> */}
-        {/* {tree4.items.map((exp) => {
-            return <LeftPanelFour key={exp.key} tree4={exp} />;
-          })} */}
-        {/* </div> */}
       </div>
     );
   } else {

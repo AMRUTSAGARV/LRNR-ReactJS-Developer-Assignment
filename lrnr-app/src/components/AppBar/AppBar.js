@@ -224,7 +224,6 @@ export default function PrimarySearchAppBar() {
               onClick={handleProfileMenuOpen}
               color="inherit"
             >
-              {/* < /> */}
               <Avatar sx={{ bgcolor: purple[500] }}>FL</Avatar>
             </IconButton>
           </Box>
