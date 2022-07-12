@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function LeftPanelTwo({ tree2 }) {
-  const [expand, setExpand] = useState(false);
+  const [expand, setExpand] = useState(true);
   if (tree2.isFolder) {
     return (
       <div>

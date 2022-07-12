@@ -84,9 +84,7 @@ export default function BasicTabs() {
           </div>
         </div>
       </TabPanel>
-      <TabPanel value={value} index={1}>
-        Board
-      </TabPanel>
+      <TabPanel value={value} index={1}></TabPanel>
       <TabPanel value={value} index={2}>
         Graph
       </TabPanel>

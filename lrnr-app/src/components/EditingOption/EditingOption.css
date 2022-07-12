@@ -1,0 +1,27 @@
+
+.icon1{
+	color: rgb(202, 0, 0);
+}
+
+.speech-bubble {
+	position: relative;
+	background: #1b1e1f;
+	border-radius: .3em;
+    border: 2px solid transparent;
+	height: 50px;
+	width: 200px;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 20px;
+	height: 25px;
+	border: 18px solid transparent;
+	border-top-color: #1b1e1f;
+	border-bottom: 0;
+	margin-left: -20px;
+	margin-bottom: -20px;
+}

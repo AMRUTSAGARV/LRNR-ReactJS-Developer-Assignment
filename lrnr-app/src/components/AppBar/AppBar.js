@@ -16,6 +16,9 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
 import ToggleOffTwoToneIcon from "@mui/icons-material/ToggleOffTwoTone";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
+import PersonAddAltSharpIcon from "@mui/icons-material/PersonAddAltSharp";
+import { Avatar } from "@mui/material";
+import { purple } from "@mui/material/colors";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -86,7 +89,7 @@ export default function PrimarySearchAppBar() {
     <Menu
       anchorEl={anchorEl}
       anchorOrigin={{
-        vertical: "top",
+        vertical: "bottom",
         horizontal: "right",
       }}
       id={menuId}
@@ -132,8 +135,8 @@ export default function PrimarySearchAppBar() {
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
-        <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="error">
+        <IconButton size="large" aria-label="show new mails" color="inherit">
+          <Badge>
             <MailIcon />
           </Badge>
         </IconButton>
@@ -145,7 +148,7 @@ export default function PrimarySearchAppBar() {
           aria-label="show 17 new notifications"
           color="inherit"
         >
-          <Badge badgeContent={17} color="error">
+          <Badge>
             <NotificationsIcon />
           </Badge>
         </IconButton>
@@ -168,7 +171,7 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" style={{ backgroundColor: "white" }}>
         <Toolbar>
           <IconButton
             size="large"
@@ -177,16 +180,17 @@ export default function PrimarySearchAppBar() {
             aria-label="open drawer"
             sx={{ mr: 2 }}
           >
-            <MenuIcon />
+            <MenuIcon style={{ color: "black" }} />
           </IconButton>
 
           <Search>
             <SearchIconWrapper>
-              <SearchIcon />
+              <SearchIcon style={{ color: "black" }} />
             </SearchIconWrapper>
             <StyledInputBase
               placeholder="dfin"
               inputProps={{ "aria-label": "search" }}
+              style={{ color: "black" }}
             />
           </Search>
           <Box sx={{ flexGrow: 1 }} />
@@ -196,16 +200,18 @@ export default function PrimarySearchAppBar() {
               aria-label="show 4 new mails"
               color="inherit"
             >
-              <Badge badgeContent={4} color="error">
-                <MailIcon />
+              <Badge sx={{ fontSize: "h6.fontSize", color: "black" }}>
+                <Badge>INVITE TEAM MEMBER</Badge>
+                <PersonAddAltSharpIcon style={{ color: "black" }} />
               </Badge>
             </IconButton>
             <IconButton
               size="large"
               aria-label="show 17 new notifications"
               color="inherit"
+              style={{ color: "black" }}
             >
-              <Badge badgeContent={17} color="error">
+              <Badge>
                 <NotificationsIcon />
               </Badge>
             </IconButton>
@@ -218,7 +224,8 @@ export default function PrimarySearchAppBar() {
               onClick={handleProfileMenuOpen}
               color="inherit"
             >
-              <AccountCircle />
+              {/* < /> */}
+              <Avatar sx={{ bgcolor: purple[500] }}>FL</Avatar>
             </IconButton>
           </Box>
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
